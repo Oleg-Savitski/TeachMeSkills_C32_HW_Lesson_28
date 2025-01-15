@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .error-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 450px;
+        }
+
+        h2 {
+            color: #ff4757;
+        }
+
+        #errorMessage {
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .error-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .login-button {
+            margin-top: 15px;
+        }
+
+        .login-button a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <h2>Error</h2>
+    <img src="images/error.png" alt="Error" class="error-image">
+    <p id="errorMessage"></p>
+    <div class="login-button">
+        <a href="user_registration.html">Return to Registration Page</a>
+    </div>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const errorMessage = urlParams.get('message');
+    if (errorMessage) {
+        document.getElementById('errorMessage').textContent = errorMessage;
+    } else {
+        document.getElementById('errorMessage').textContent = "An unknown error occurred.";
+    }
+</script>
+</body>
+</html>

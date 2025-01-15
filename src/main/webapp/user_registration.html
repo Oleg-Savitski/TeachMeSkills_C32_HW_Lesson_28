@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="registration-container">
+    <h2>Registration</h2>
+
+    <div id="errorContainer" style="color: red;"></div>
+
+    <form id="registrationForm" action="/register" method="post">
+        <div class="form-group">
+            <label>Username</label>
+            <input
+                    type="text"
+                    name="username"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    pattern="[a-zA-Z0-9_-]+"
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input
+                    type="email"
+                    name="email"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input
+                    type="password"
+                    name="password"
+                    required
+                    minlength="8"
+                    maxlength="30"
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input
+                    type="password"
+                    name="confirmPassword"
+                    required
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input
+                    type="text"
+                    name="fullName"
+                    required
+                    minlength="2"
+                    maxlength="100"
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Country</label>
+            <select name="country" required>
+                <option value="">Select Country</option>
+                <option value="russia">Russia</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="belarus">Belarus</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>City</label>
+            <input
+                    type="text"
+                    name="city"
+                    required
+                    minlength="2"
+                    maxlength="50"
+            >
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+
+    <div class="login-button" style="text-align: center; margin-top: 15px;">
+        <a href="login.html" style="text-decoration: none; color: blue;">Return to Login Page</a>
+    </div>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const errorMessage = urlParams.get('message');
+    if (errorMessage) {
+        document.getElementById('errorContainer').textContent = errorMessage;
+    }
+</script>
+</body>
+</html>

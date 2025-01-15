@@ -1,0 +1,42 @@
+Username: Google
+Email: google@gamil.com
+Full Name: Google Com Int
+Country: belarus
+City: Minsk
+Password: legendog
+--------------------------------------------------
+Username: Olga
+Email: olga@mail.ru
+Full Name: Olga Olga
+Country: ukraine
+City: Odesa
+Password: legendog1993
+--------------------------------------------------
+Username: Oleg
+Email: www.legendog@mail.ru
+Full Name: Oleg Savitski
+Country: belarus
+City: Ratomka
+Password: legendog
+--------------------------------------------------
+Username: Teach
+Email: teach@mail.ru
+Full Name: TeachMeSkills_C32
+Country: belarus
+City: Vitebsk
+Password: legendog1234
+--------------------------------------------------
+Username: Tany
+Email: tany@gmail.com
+Full Name: Tany Novak
+Country: russia
+City: Omsk
+Password: legendoglegendog
+--------------------------------------------------
+Username: Sandra
+Email: sandra@mail.ru
+Full Name: Sandra Savitskay 
+Country: belarus
+City: Ratomka
+Password: legendog
+--------------------------------------------------
