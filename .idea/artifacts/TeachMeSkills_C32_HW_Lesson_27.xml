@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="TeachMeSkills_C32_HW_Lesson_27">
-    <output-path>$PROJECT_DIR$/out/artifacts/TeachMeSkills_C32_HW_Lesson_27</output-path>
-    <root id="root" />
-  </artifact>
-</component>
