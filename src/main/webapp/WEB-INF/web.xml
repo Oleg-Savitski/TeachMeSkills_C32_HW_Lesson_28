@@ -4,7 +4,7 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
-  <display-name>User Registration App</display-name>
+  <display-name>User App</display-name>
   <welcome-file-list>
     <welcome-file>html/login.html</welcome-file>
   </welcome-file-list>

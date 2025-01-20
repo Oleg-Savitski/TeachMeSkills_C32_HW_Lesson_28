@@ -15,8 +15,8 @@ import static utils.IConstantsPath.FILE_NAME;
 
 public class UserManager {
     private static final Logger LOGGER = Logger.getLogger(UserManager.class.getName());
-    private final Map<String, User> users = new ConcurrentHashMap<>();
     private static UserManager instance;
+    public final Map<String, User> users = new ConcurrentHashMap<>();
 
     private UserManager() {
         loadUsersFromFile();
@@ -82,7 +82,7 @@ public class UserManager {
         return users.get(username);
     }
 
-    private synchronized void saveUsersToFile() {
+    public synchronized void saveUsersToFile() {
         try (BufferedWriter writer = new BufferedWriter(
                 new OutputStreamWriter(
                         new FileOutputStream(FILE_NAME, false),

@@ -9,8 +9,6 @@ import repository.UserManager;
 import model.User;
 
 import java.io.IOException;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
@@ -26,10 +24,10 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         LOGGER.info("Login Attempt -> username=" + username);
+
         if (username == null || password == null) {
             LOGGER.warning("Empty credentials");
-            response.sendRedirect("login.html?error=" +
-                    URLEncoder.encode("Enter your username and password", StandardCharsets.UTF_8));
+            response.sendRedirect("login.html?error=empty");
             return;
         }
 
@@ -45,22 +43,18 @@ public class LoginServlet extends HttpServlet {
                     newSession.setAttribute("username", username);
 
                     LOGGER.info("Successful login -> " + username);
-                    response.sendRedirect("success.html?username=" +
-                            URLEncoder.encode(username, StandardCharsets.UTF_8));
+                    response.sendRedirect("profile.html");
                 } else {
                     LOGGER.warning("Invalid password for -> " + username);
-                    response.sendRedirect("login.html?error=" +
-                            URLEncoder.encode("Invalid password", StandardCharsets.UTF_8));
+                    response.sendRedirect("login.html?error=invalid");
                 }
             } else {
                 LOGGER.warning("The user was not found -> " + username);
-                response.sendRedirect("login.html?error=" +
-                        URLEncoder.encode("The user was not found", StandardCharsets.UTF_8));
+                response.sendRedirect("login.html?error=notfound");
             }
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, "Error when logging in", e);
-            response.sendRedirect("login.html?error=" +
-                    URLEncoder.encode("System error", StandardCharsets.UTF_8));
+            response.sendRedirect("login.html?error=system");
         }
     }
     @Override

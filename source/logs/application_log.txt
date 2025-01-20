@@ -1,0 +1,32 @@
+Web Application is starting...
+Application start time: 2025-01-20T19:43:20.462763600
+Total registered users: 7
+Performing startup tasks...
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time: 2025-01-20 19:53:24
+Total registered users: 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors: 8
+Total Memory: 128 MB
+Free Memory: 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class: servlets.LoginServlet
+Annotations:
+  URL Patterns: /login
+--- Registration Servlet ---
+Class: servlets.RegistrationServlet
+Annotations:
+  URL Patterns: /register
+===================================================

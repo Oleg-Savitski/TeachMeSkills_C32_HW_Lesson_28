@@ -5,12 +5,26 @@ Country: belarus
 City: Minsk
 Password: legendog
 --------------------------------------------------
+Username: OlegSava
+Email: www.legendog1111@mail.ru
+Full Name: Oleg Sava
+Country: belarus
+City: Minsk
+Password: legendog
+--------------------------------------------------
 Username: Olga
 Email: olga@mail.ru
 Full Name: Olga Olga
 Country: ukraine
 City: Odesa
 Password: legendog1993
+--------------------------------------------------
+Username: Maxim
+Email: maxim@mail.ru
+Full Name: Maxim Maximov
+Country: ukraine
+City: Paskor
+Password: legendog
 --------------------------------------------------
 Username: Oleg
 Email: www.legendog@mail.ru
@@ -35,7 +49,7 @@ Password: legendoglegendog
 --------------------------------------------------
 Username: Sandra
 Email: sandra@mail.ru
-Full Name: Sandra Savitskay 
+Full Name: Sandra Savitskay
 Country: belarus
 City: Ratomka
 Password: legendog

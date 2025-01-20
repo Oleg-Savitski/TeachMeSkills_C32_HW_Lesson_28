@@ -42,12 +42,30 @@
 </div>
 
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const error = urlParams.get('error');
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        const errorMessageElement = document.getElementById('errorMessage');
 
-    if (error === 'true') {
-        document.getElementById('errorMessage').style.display = 'block';
-    }
+        switch(error) {
+            case 'empty':
+                errorMessageElement.textContent = 'Please enter username and password';
+                errorMessageElement.style.display = 'block';
+                break;
+            case 'invalid':
+                errorMessageElement.textContent = 'Invalid username or password';
+                errorMessageElement.style.display = 'block';
+                break;
+            case 'notfound':
+                errorMessageElement.textContent = 'User not found';
+                errorMessageElement.style.display = 'block';
+                break;
+            case 'system':
+                errorMessageElement.textContent = 'System error occurred';
+                errorMessageElement.style.display = 'block';
+                break;
+        }
+    });
 </script>
 </body>
 </html>

@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
-    <artifactId>TeachMeSkills_C32_HW_Lesson_26</artifactId>
+    <artifactId>TeachMeSkills_C32_HW_Lesson_27</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>TeachMeSkills_C32_Lesson_26 Maven Webapp</name>
+    <name>TeachMeSkills_C32_HW_Lesson_27 Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
         <maven.compiler.source>23</maven.compiler.source>
@@ -28,6 +28,6 @@
                 <version>3.3.2</version>
             </plugin>
         </plugins>
-        <finalName>TeachMeSkills_C32_Lesson_26</finalName>
+        <finalName>TeachMeSkills_C32_HW_Lesson_27</finalName>
     </build>
 </project>
