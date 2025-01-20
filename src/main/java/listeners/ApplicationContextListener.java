@@ -6,6 +6,8 @@ import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.annotation.WebServlet;
 import repository.UserManager;
 import servlets.LoginServlet;
+import servlets.LogoutServlet;
+import servlets.ProfileServlet;
 import servlets.RegistrationServlet;
 
 import java.io.BufferedWriter;
@@ -25,7 +27,7 @@ public class ApplicationContextListener implements ServletContextListener {
         logToFile("===================================================");
         logToFile("APPLICATION STARTUP REPORT");
         logToFile("===================================================");
-        logToFile("Application start time: " + LocalDateTime.now().format(FORMATTER));
+        logToFile("Application start time -> " + LocalDateTime.now().format(FORMATTER));
 
         initializeUserManager();
         performStartupTasks();
@@ -39,7 +41,7 @@ public class ApplicationContextListener implements ServletContextListener {
         logToFile("===================================================");
         logToFile("APPLICATION SHUTDOWN REPORT");
         logToFile("===================================================");
-        logToFile("Application shutdown time: " + LocalDateTime.now().format(FORMATTER));
+        logToFile("Application shutdown time -> " + LocalDateTime.now().format(FORMATTER));
 
         performShutdownTasks();
 
@@ -49,9 +51,9 @@ public class ApplicationContextListener implements ServletContextListener {
     private void initializeUserManager() {
         try {
             UserManager userManager = UserManager.getInstance();
-            logToFile("Total registered users: " + userManager.users.size());
+            logToFile("Total registered users -> " + userManager.users.size());
         } catch (Exception e) {
-            logToFile("Error initializing UserManager: " + e.getMessage());
+            logToFile("Error initializing UserManager -> " + e.getMessage());
         }
     }
 
@@ -64,7 +66,9 @@ public class ApplicationContextListener implements ServletContextListener {
     private void validateApplicationData() {
         try {
             UserManager userManager = UserManager.getInstance();
-            long invalidUsers = userManager.users.values().stream()
+            long invalidUsers = userManager.users
+                    .values()
+                    .stream()
                     .filter(user -> user.getUsername() == null ||
                             user.getEmail() == null ||
                             user.getPassword() == null)
@@ -76,49 +80,46 @@ public class ApplicationContextListener implements ServletContextListener {
                 logToFile("All user records are valid");
             }
         } catch (Exception e) {
-            logToFile("Data validation error: " + e.getMessage());
+            logToFile("Data validation error -> " + e.getMessage());
         }
     }
 
     private void logSystemInformation() {
         logToFile("System Information:");
-        logToFile("Java Version: " + System.getProperty("java.version"));
-        logToFile("OS Name: " + System.getProperty("os.name"));
-        logToFile("User Directory: " + System.getProperty("user.dir"));
-        logToFile("Available Processors: " + Runtime.getRuntime().availableProcessors());
-        logToFile("Total Memory: " + (Runtime.getRuntime().totalMemory() / (1024 * 1024)) + " MB");
-        logToFile("Free Memory: " + (Runtime.getRuntime().freeMemory() / (1024 * 1024)) + " MB");
+        logToFile("Java Version -> " + System.getProperty("java.version"));
+        logToFile("OS Name -> " + System.getProperty("os.name"));
+        logToFile("User Directory -> " + System.getProperty("user.dir"));
+        logToFile("Available Processors -> " + Runtime.getRuntime().availableProcessors());
+        logToFile("Total Memory -> " + (Runtime.getRuntime().totalMemory() / (1024 * 1024)) + " MB");
+        logToFile("Free Memory -> " + (Runtime.getRuntime().freeMemory() / (1024 * 1024)) + " MB");
     }
 
     private void logServletInformation() {
         logToFile("Servlet Configuration:");
-
-        // Информация о сервлетах
         logServletDetails("Login Servlet", LoginServlet.class);
         logServletDetails("Registration Servlet", RegistrationServlet.class);
+        logServletDetails("Profile Servlet", ProfileServlet.class);
+        logServletDetails("Logout Servlet", LogoutServlet.class);
     }
 
     private void logServletDetails(String servletName, Class<?> servletClass) {
         logToFile("--- " + servletName + " ---");
-        logToFile("Class: " + servletClass.getName());
+        logToFile("Class -> " + servletClass.getName());
         logToFile("Annotations:");
-
-        // Логирование аннотаций сервлета
         if (servletClass.isAnnotationPresent(WebServlet.class)) {
             WebServlet annotation = servletClass.getAnnotation(WebServlet.class);
-            logToFile("  URL Patterns: " + String.join(", ", annotation.value()));
+            logToFile("  URL Patterns -> " + String.join(", ", annotation.value()));
         }
     }
 
     private void performShutdownTasks() {
         try {
             UserManager userManager = UserManager.getInstance();
-            logToFile("Users at shutdown: " + userManager.users.size());
+            logToFile("Users at shutdown -> " + userManager.users.size());
             userManager.saveUsersToFile();
-
             logToFile("Application shutdown sequence completed");
         } catch (Exception e) {
-            logToFile("Error during application shutdown: " + e.getMessage());
+            logToFile("Error during application shutdown -> " + e.getMessage());
         }
     }
 
