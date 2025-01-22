@@ -1,31 +1,34 @@
-package repository;
+package repository.impl;
 
 import exceptions.RegistrationError;
 import model.User;
+import repository.IFileBasedRepository;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.Map;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.logging.Logger;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static utils.IConstantsPath.EMAIL_PATTERN;
 import static utils.IConstantsPath.FILE_NAME;
 
-public class UserManager {
-    private static final Logger LOGGER = Logger.getLogger(UserManager.class.getName());
-    private static UserManager instance;
+public class UserManagerRepository implements IFileBasedRepository<User, String> {
+    private static final Logger LOGGER = Logger.getLogger(UserManagerRepository.class.getName());
+    private static UserManagerRepository instance;
     public final Map<String, User> users = new ConcurrentHashMap<>();
 
-    private UserManager() {
+    private UserManagerRepository() {
         loadUsersFromFile();
         printAllUsers();
     }
 
-    public static synchronized UserManager getInstance() {
+    public static synchronized UserManagerRepository getInstance() {
         if (instance == null) {
-            instance = new UserManager();
+            instance = new UserManagerRepository();
         }
         return instance;
     }
@@ -34,6 +37,25 @@ public class UserManager {
         return email != null &&
                 !email.trim().isEmpty() &&
                 EMAIL_PATTERN.matcher(email).matches();
+    }
+
+    private RegistrationError validateUser(String username, String email,
+                                           String password, String confirmPassword) {
+        synchronized (this) {
+            if (users.containsKey(username)) {
+                return RegistrationError.USERNAME_EXISTS;
+            }
+            if (!isValidEmail(email)) {
+                return RegistrationError.INVALID_EMAIL;
+            }
+            if (!password.equals(confirmPassword)) {
+                return RegistrationError.PASSWORDS_DO_NOT_MATCH;
+            }
+            if (password.length() < 8 || password.length() > 30) {
+                return RegistrationError.PASSWORD_LENGTH_INVALID;
+            }
+            return null;
+        }
     }
 
     public synchronized void registerUser(String username, String email, String password,
@@ -59,36 +81,30 @@ public class UserManager {
         }
     }
 
-    private RegistrationError validateUser(String username, String email,
-                                           String password, String confirmPassword) {
-        synchronized (this) {
-            if (users.containsKey(username)) {
-                return RegistrationError.USERNAME_EXISTS;
+    @Override
+    public void createDirectoryIfNotExists() {
+        try {
+            File directory = new File(FILE_NAME).getParentFile();
+            if (!directory.exists()) {
+                directory.mkdirs();
             }
-            if (!isValidEmail(email)) {
-                return RegistrationError.INVALID_EMAIL;
-            }
-            if (!password.equals(confirmPassword)) {
-                return RegistrationError.PASSWORDS_DO_NOT_MATCH;
-            }
-            if (password.length() < 8 || password.length() > 30) {
-                return RegistrationError.PASSWORD_LENGTH_INVALID;
-            }
-            return null;
+        } catch (Exception _) {
         }
     }
 
-    public User getUser(String username) {
-        return users.get(username);
+    @Override
+    public Path getFilePath(String identifier) {
+        return Paths.get(FILE_NAME);
     }
 
-    public synchronized void saveUsersToFile() {
+    @Override
+    public void save(String username, List<User> usersToSave) {
         try (BufferedWriter writer = new BufferedWriter(
                 new OutputStreamWriter(
                         new FileOutputStream(FILE_NAME, false),
                         StandardCharsets.UTF_8))) {
 
-            for (User user : users.values()) {
+            for (User user : usersToSave) {
                 writer.write("Username: " + user.getUsername());
                 writer.newLine();
                 writer.write("Email: " + user.getEmail());
@@ -110,26 +126,24 @@ public class UserManager {
         }
     }
 
-    private synchronized void loadUsersFromFile() {
+    @Override
+    public Optional<List<User>> load(String username) {
+        List<User> loadedUsers = new ArrayList<>();
+
         File file = new File(FILE_NAME);
         if (!file.exists()) {
             LOGGER.warning("File not found -> " + FILE_NAME);
-            return;
+            return Optional.empty();
         }
 
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(
-                        new FileInputStream(file),
-                        StandardCharsets.UTF_8))) {
-
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
-
-            String username = null, email = null, password = null,
+            String currentUsername = null, email = null, password = null,
                     fullName = null, country = null, city = null;
 
             while ((line = reader.readLine()) != null) {
                 if (line.startsWith("Username: ")) {
-                    username = line.substring("Username: ".length()).trim();
+                    currentUsername = line.substring("Username: ".length()).trim();
                 } else if (line.startsWith("Email: ")) {
                     email = line.substring("Email: ".length()).trim();
                 } else if (line.startsWith("Full Name: ")) {
@@ -143,32 +157,43 @@ public class UserManager {
                 }
 
                 if (line.trim().equals("--------------------------------------------------")) {
-                    if (username != null && email != null && password != null &&
+                    if (currentUsername != null && email != null && password != null &&
                             fullName != null && country != null && city != null) {
 
-                        User user = new User(username, email, password, fullName, country, city);
-                        users.put(username, user);
-                        username = email = password = fullName = country = city = null;
+                        User user = new User(currentUsername, email, password, fullName, country, city);
+                        loadedUsers.add(user);
+                        currentUsername = email = password = fullName = country = city = null;
                     }
                 }
             }
 
-            if (username != null && email != null && password != null &&
+            if (currentUsername != null && email != null && password != null &&
                     fullName != null && country != null && city != null) {
-                User user = new User(username, email, password, fullName, country, city);
-                users.put(username, user);
+                User user = new User(currentUsername, email, password, fullName, country, city);
+                loadedUsers.add(user);
             }
 
-            LOGGER.info("Uploaded users -> " + users.size());
+            return Optional.of(loadedUsers);
         } catch (IOException e) {
-            LOGGER.log(Level.SEVERE, "User upload error", e);
+            LOGGER.log(Level.SEVERE, "Error loading users!!!", e);
+            return Optional.empty();
         }
     }
 
+    public synchronized void saveUsersToFile() {
+        save(null, new ArrayList<>(users.values()));
+    }
+
+    public void loadUsersFromFile() {
+        Optional<List<User>> loadedUsers = load(null);
+        loadedUsers.ifPresent(usersList -> usersList.forEach(user -> users.put(user.getUsername(), user)));
+    }
+
+    public User getUser(String username) {
+        return users.get(username);
+    }
+
     public void printAllUsers() {
-        LOGGER.info("Registered users -> ");
-        users.values().forEach(user ->
-                LOGGER.info(user.getUsername())
-        );
+        users.values().forEach(user -> LOGGER.info("User -> " + user.getUsername()));
     }
 }

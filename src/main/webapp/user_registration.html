@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/user_registration_styles.css">
 </head>
 <body>
 <div class="registration-container">
@@ -14,9 +14,10 @@
 
     <form id="registrationForm" action="/register" method="post">
         <div class="form-group">
-            <label>Username</label>
+            <label for="username">Username</label>
             <input
                     type="text"
+                    id="username"
                     name="username"
                     required
                     minlength="3"
@@ -26,9 +27,10 @@
         </div>
 
         <div class="form-group">
-            <label>Email</label>
+            <label for="email">Email</label>
             <input
                     type="email"
+                    id="email"
                     name="email"
                     required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -36,9 +38,10 @@
         </div>
 
         <div class="form-group">
-            <label>Password</label>
+            <label for="password">Password</label>
             <input
                     type="password"
+                    id="password"
                     name="password"
                     required
                     minlength="8"
@@ -47,18 +50,20 @@
         </div>
 
         <div class="form-group">
-            <label>Confirm Password</label>
+            <label for="confirmPassword">Confirm Password</label>
             <input
                     type="password"
+                    id="confirmPassword"
                     name="confirmPassword"
                     required
             >
         </div>
 
         <div class="form-group">
-            <label>Full Name</label>
+            <label for="fullName">Full Name</label>
             <input
                     type="text"
+                    id="fullName"
                     name="fullName"
                     required
                     minlength="2"
@@ -67,8 +72,8 @@
         </div>
 
         <div class="form-group">
-            <label>Country</label>
-            <select name="country" required>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
                 <option value="">Select Country</option>
                 <option value="russia">Russia</option>
                 <option value="ukraine">Ukraine</option>
@@ -77,9 +82,10 @@
         </div>
 
         <div class="form-group">
-            <label>City</label>
+            <label for="city">City</label>
             <input
                     type="text"
+                    id="city"
                     name="city"
                     required
                     minlength="2"

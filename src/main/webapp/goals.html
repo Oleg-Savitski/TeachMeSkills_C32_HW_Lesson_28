@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Goals Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/goals_styles.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">Personal Goals Tracker</h2>
+    <div class="text-end mb-3">
+        <button class="btn btn-outline-secondary me-2" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+        <button class="btn btn-outline-primary" id="profileBtn">
+            <i class="fas fa-user"></i> Profile
+        </button>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="newGoalInput" placeholder="Enter a new goal...">
+        <button class="btn btn-primary" id="addGoalBtn">
+            <i class="fas fa-plus"></i> Add Goal
+        </button>
+    </div>
+
+    <div id="emptyStateMessage" class="text-center" style="display: block;">
+        <i class="fas fa-tasks" style="font-size: 48px; color: #6c757d;"></i>
+        <p>No goals yet. Start by adding your first goal!</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">My Goals</h4>
+        </div>
+        <ul class="list-group list-group-flush" id="goalsList"></ul>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const newGoalInput = document.getElementById('newGoalInput');
+        const addGoalBtn = document.getElementById('addGoalBtn');
+        const goalsList = document.getElementById('goalsList');
+        const emptyStateMessage = document.getElementById('emptyStateMessage');
+
+        loadExistingGoals();
+
+        function loadExistingGoals() {
+            fetch('/goals?action=load', {
+                method: 'GET',
+                credentials: 'same-origin'
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load goals');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    goalsList.innerHTML = '';
+                    const goalStrings = data.split('\n');
+
+                    goalStrings.forEach(goalText => {
+                        const completedMatch = goalText.match(/\[completed:(.+)\]$/);
+                        const isCompleted = !!completedMatch;
+
+                        const cleanGoalText = completedMatch
+                            ? goalText.replace(/\[completed:.+\]$/, '').trim()
+                            : goalText;
+
+                        if (cleanGoalText) {
+                            const li = createGoalElement(cleanGoalText, isCompleted);
+                            if (isCompleted && completedMatch) {
+                                const completionTime = completedMatch[1];
+                                li.querySelector('.goal-text').insertAdjacentHTML(
+                                    'afterend',
+                                    `<span class="text-success ms-2">Completed on: ${completionTime}</span>`
+                                );
+                            }
+                            goalsList.appendChild(li);
+                        }
+                    });
+
+                    updateEmptyState();
+                })
+                .catch(error => {
+                    console.error('Error loading goals:', error);
+                    showNotification('Failed to load goals', 'danger');
+                });
+        }
+
+        function saveGoals() {
+            const goals = Array.from(goalsList.children)
+                .map(li => {
+                    const goalText = li.querySelector('.goal-text').textContent.trim();
+                    const isCompleted = li.querySelector('.goal-checkbox').checked;
+
+                    return isCompleted
+                        ? `${goalText} [completed:${new Date().toLocaleString()}]`
+                        : goalText;
+                })
+                .filter(goal => goal !== '');
+
+            fetch('/goals', {
+                method: 'POST',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'text/plain',
+                },
+                body: goals.join('\n')
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to save goals');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error saving goals:', error);
+                    showNotification('Failed to save goals', 'danger');
+                });
+        }
+
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            fetch('/logout', { method: 'POST', credentials: 'same-origin' })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = 'login.html';
+                    } else {
+                        throw new Error('Logout failed');
+                    }
+                })
+                .catch(error => console.error('Logout error:', error));
+        });
+
+        document.getElementById('profileBtn').addEventListener('click', function() {
+            fetch('/profile', { method: 'GET', credentials: 'same-origin' })
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Profile access failed');
+                    }
+                })
+                .then(async html => {
+                    document.open();
+                    document.write(await html);
+                    document.close();
+                })
+                .catch(error => console.error('Profile access error:', error));
+        });
+
+        addGoalBtn.addEventListener('click', function() {
+            const goalText = newGoalInput.value.trim();
+            if (goalText) {
+                const li = createGoalElement(goalText, false);
+                goalsList.appendChild(li);
+                newGoalInput.value = '';
+                updateEmptyState();
+                saveGoals();
+            }
+        });
+
+        newGoalInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addGoalBtn.click();
+            }
+        });
+
+        function updateEmptyState() {
+            emptyStateMessage.style.display = goalsList.children.length === 0 ? 'block' : 'none';
+        }
+
+        function createGoalElement(goalText, isCompleted) {
+            const li = document.createElement('li');
+            li.className = 'list-group-item';
+            if (isCompleted) li.classList.add('completed');
+
+            li.innerHTML = `
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <input type="checkbox" class="form-check-input goal-checkbox" ${isCompleted ? 'checked' : ''}>
+                <span class="goal-text">${goalText}</span>
+            </div>
+            <button class="btn btn-sm btn-danger delete-goal">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+    `;
+
+            li.querySelector('.goal-checkbox').addEventListener('change', function() {
+                if (this.checked) {
+                    li.classList.add('completed');
+                    const completionTime = new Date().toLocaleString();
+                    li.querySelector('.goal-text').insertAdjacentHTML('afterend', `<span class="text-success ms-2">Completed on: ${completionTime}</span>`);
+                } else {
+                    li.classList.remove('completed');
+                    const completedSpan = li.querySelector('.text-success');
+                    if (completedSpan) completedSpan.remove();
+                }
+                saveGoals();
+            });
+
+            li.querySelector('.delete-goal').addEventListener('click', function() {
+                goalsList.removeChild(li);
+                updateEmptyState();
+                saveGoals();
+                showNotification('Goal deleted!', 'danger');
+            });
+
+            return li;
+        }
+
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type} alert-dismissible fade show`;
+            notification.role = 'alert';
+            notification.innerHTML = `
+                ${message}
+                <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => document.body.removeChild(notification), 150);
+            }, 3000);
+        }
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

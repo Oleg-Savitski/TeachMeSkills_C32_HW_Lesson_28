@@ -1,104 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User profile</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .header-container {
-            background-color: #2c3e50;
-            padding: 1rem;
-            text-align: right;
-        }
-
-        .header-container button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            margin-left: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .header-container button:hover {
-            background-color: #2980b9;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            display: flex;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .profile-photo {
-            flex: 0 0 250px;
-            background-color: #ecf0f1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
-
-        .profile-photo img {
-            max-width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .bio {
-            flex: 1;
-            padding: 2rem;
-        }
-
-        .bio h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-
-        .bio p {
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                margin: 1rem;
-            }
-
-            .profile-photo {
-                flex: 0 0 auto;
-                padding: 1rem;
-                background-color: #f4f4f4;
-            }
-
-            .profile-photo img {
-                max-height: 200px;
-            }
-        }
-    </style>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile_styles.css">
 </head>
 <body>
 <div class="header-container">
@@ -106,27 +12,42 @@
         <form action="/logout" method="post" style="display:inline;">
             <button type="submit">Logout</button>
         </form>
-        <button onclick="openTodo()">Todo</button>
+        <button onclick="openTodo()">Goals</button>
     </header>
 </div>
 <div class="container">
     <div class="profile-photo">
-        <img src="images/photo.jpg" alt="User's photo">
+        <img src="images/photo.jpg" alt="User 's photo">
     </div>
     <div class="bio">
         <h2>Brief biography</h2>
-        <p>My name is <span id="username">"Guest"</span>. I am a programmer with a passion for artificial intelligence and cybersecurity. From an early age, he was interested in technology and began programming, creating his first games.</p>
+        <p>My name is <span id="username">Guest</span>. I am a programmer with a passion for artificial intelligence and cybersecurity. From an early age, I was interested in technology and began programming, creating my first games.</p>
 
         <p>After university, I work for an IT company, where I develop machine learning algorithms and participate in cyber defense projects. In my free time, I enjoy photography and travel, capturing unique moments and landscapes. Reading science fiction inspires me to come up with new ideas and solutions in my work. I also actively teach children the basics of programming, believing in the power of technology to change the world for the better. My dream is to create a startup that will develop innovative solutions in the field of AI.</p>
     </div>
 </div>
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const username = urlParams.get('username');
-    document.getElementById("username").textContent = username ? username : "\"Guest\"";
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        document.getElementById("username").textContent = username || "Guest";
+    });
 
     function openTodo() {
-        alert("Open the task list.");
+        fetch('/goals', { method: 'GET', credentials: 'same-origin' })
+            .then(response => {
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    throw new Error('Failed to load goals');
+                }
+            })
+            .then(async html => {
+                document.open();
+                document.write(await html);
+                document.close();
+            })
+            .catch(error => console.error('Error loading goals:', error));
     }
 </script>
 </body>

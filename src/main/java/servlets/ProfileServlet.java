@@ -1,10 +1,7 @@
 package servlets;
 
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.*;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -16,17 +13,17 @@ public class ProfileServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(ProfileServlet.class.getName());
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
         HttpSession session = request.getSession(false);
-        if (session != null) {
+
+        if (session != null && session.getAttribute("username") != null) {
             String username = (String) session.getAttribute("username");
-            if (username != null) {
-                LOGGER.info("Access to the user's profile -> " + username);
-                response.sendRedirect("profile.html?username=" + URLEncoder.encode(username, StandardCharsets.UTF_8));
-                return;
-            }
+            LOGGER.info("Accessing profile for user -> " + username);
+            response.sendRedirect("profile.html?username=" + URLEncoder.encode(username, StandardCharsets.UTF_8));
+        } else {
+            LOGGER.warning("User  not logged in, redirecting to login page.");
+            response.sendRedirect("login.html");
         }
-        LOGGER.warning("An attempt to access the profile without an active session!");
-        response.sendRedirect("login.html");
     }
 }

@@ -4,7 +4,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import repository.UserManager;
+import repository.impl.UserManagerRepository;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -15,7 +15,7 @@ import java.util.logging.Level;
 @WebServlet("/register")
 public class RegistrationServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(RegistrationServlet.class.getName());
-    private final UserManager userManager = UserManager.getInstance();
+    private final UserManagerRepository userManager = UserManagerRepository.getInstance();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {

@@ -4,43 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .error-message {
-            color: red;
-            text-align: center;
-            margin-top: 10px;
-            display: none;
-        }
-        .register-button {
-            display: block;
-            margin-top: 15px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/login_styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container">
-    <h2>Login</h2>
-    <form action="login" method="get" id="loginForm">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="text-center">Login</h2>
+                <form action="login" method="post" id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <div id="errorMessage" class="error-message text-danger text-center mt-2" style="display: none;">
+                        Invalid username or password..
+                    </div>
+                </form>
+                <div class="register-button text-center mt-3">
+                    <a href="user_registration.html" class="btn btn-link">Register as a new user</a>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit">Login</button>
-        <div id="errorMessage" class="error-message">
-            Invalid username or password..
-        </div>
-    </form>
-    <div class="register-button">
-        <a href="user_registration.html" style="text-decoration: none; color: blue;">Register as a new user</a>
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const urlParams = new URLSearchParams(window.location.search);
@@ -57,7 +54,7 @@
                 errorMessageElement.style.display = 'block';
                 break;
             case 'notfound':
-                errorMessageElement.textContent = 'User not found';
+                errorMessageElement.textContent = 'User  not found';
                 errorMessageElement.style.display = 'block';
                 break;
             case 'system':

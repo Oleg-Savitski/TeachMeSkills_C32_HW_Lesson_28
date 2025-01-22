@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.goals-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    padding: 40px;
+    width: 100%;
+    max-width: 650px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.goals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 15px;
+}
+
+.goals-header h2 {
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.goal-input-group {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.goal-input-group input {
+    flex-grow: 1;
+    margin-right: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.goal-input-group input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+.goal-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.goal-list-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.goal-list-item.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+.goal-actions {
+    display: flex;
+    align-items: center;
+}
+
+.goal-checkbox {
+    transform: scale(1.2);
+    margin-right: 15px;
+    cursor: pointer;
+    accent-color: #4a90e2;
+}
+
+.delete-goal {
+    transition: all 0.3s ease;
+}
+
+.delete-goal:hover {
+    transform: scale(1.1);
+}
+
+#emptyStateMessage {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px;
+    display: none;
+}
+
+
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 1000;
+}
+
+.notification.success {
+    background-color: green;
+}
+
+.notification.error {
+    background-color: red;
+}
+
+.notification.hide {
+    opacity: 0;
+}

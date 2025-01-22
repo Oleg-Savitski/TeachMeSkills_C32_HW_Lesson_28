@@ -4,11 +4,8 @@ import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.annotation.WebServlet;
-import repository.UserManager;
-import servlets.LoginServlet;
-import servlets.LogoutServlet;
-import servlets.ProfileServlet;
-import servlets.RegistrationServlet;
+import repository.impl.UserManagerRepository;
+import servlets.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -50,7 +47,7 @@ public class ApplicationContextListener implements ServletContextListener {
 
     private void initializeUserManager() {
         try {
-            UserManager userManager = UserManager.getInstance();
+            UserManagerRepository userManager = UserManagerRepository.getInstance();
             logToFile("Total registered users -> " + userManager.users.size());
         } catch (Exception e) {
             logToFile("Error initializing UserManager -> " + e.getMessage());
@@ -65,7 +62,7 @@ public class ApplicationContextListener implements ServletContextListener {
 
     private void validateApplicationData() {
         try {
-            UserManager userManager = UserManager.getInstance();
+            UserManagerRepository userManager = UserManagerRepository.getInstance();
             long invalidUsers = userManager.users
                     .values()
                     .stream()
@@ -100,6 +97,7 @@ public class ApplicationContextListener implements ServletContextListener {
         logServletDetails("Registration Servlet", RegistrationServlet.class);
         logServletDetails("Profile Servlet", ProfileServlet.class);
         logServletDetails("Logout Servlet", LogoutServlet.class);
+        logServletDetails("Goals Servlet", GoalsServlet.class);
     }
 
     private void logServletDetails(String servletName, Class<?> servletClass) {
@@ -114,7 +112,7 @@ public class ApplicationContextListener implements ServletContextListener {
 
     private void performShutdownTasks() {
         try {
-            UserManager userManager = UserManager.getInstance();
+            UserManagerRepository userManager = UserManagerRepository.getInstance();
             logToFile("Users at shutdown -> " + userManager.users.size());
             userManager.saveUsersToFile();
             logToFile("Application shutdown sequence completed");

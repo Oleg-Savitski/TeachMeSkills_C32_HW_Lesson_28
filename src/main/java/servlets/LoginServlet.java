@@ -5,7 +5,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import repository.UserManager;
+import repository.impl.UserManagerRepository;
 import model.User;
 
 import java.io.IOException;
@@ -15,24 +15,23 @@ import java.util.logging.Level;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(LoginServlet.class.getName());
-    private final UserManager userManager = UserManager.getInstance();
-
+    private final UserManagerRepository userManager = UserManagerRepository.getInstance();
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
         LOGGER.info("Login Attempt -> username=" + username);
 
-        if (username == null || password == null) {
+        if (username == null || password == null || username.isEmpty() || password.isEmpty()) {
             LOGGER.warning("Empty credentials");
             response.sendRedirect("login.html?error=empty");
             return;
         }
 
         try {
-            User user = userManager.getUser(username);
+            User user = userManager.getUser (username);
             if (user != null) {
                 if (user.getPassword().equals(password)) {
                     HttpSession oldSession = request.getSession(false);
@@ -57,8 +56,9 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("login.html?error=system");
         }
     }
+
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        doGet(request, response);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.sendRedirect("login.html");
     }
 }

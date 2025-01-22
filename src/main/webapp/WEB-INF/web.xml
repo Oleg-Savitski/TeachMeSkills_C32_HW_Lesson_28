@@ -6,6 +6,6 @@
 
   <display-name>User App</display-name>
   <welcome-file-list>
-    <welcome-file>html/login.html</welcome-file>
+    <welcome-file>/login.html</welcome-file>
   </welcome-file-list>
 </web-app>

@@ -30,3 +30,2851 @@ Class: servlets.RegistrationServlet
 Annotations:
   URL Patterns: /register
 ===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time: 2025-01-20 20:24:16
+Total registered users: 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors: 8
+Total Memory: 128 MB
+Free Memory: 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class: servlets.LoginServlet
+Annotations:
+  URL Patterns: /login
+--- Registration Servlet ---
+Class: servlets.RegistrationServlet
+Annotations:
+  URL Patterns: /register
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time: 2025-01-20 23:05:14
+Total registered users: 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors: 8
+Total Memory: 128 MB
+Free Memory: 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class: servlets.LoginServlet
+Annotations:
+  URL Patterns: /login
+--- Registration Servlet ---
+Class: servlets.RegistrationServlet
+Annotations:
+  URL Patterns: /register
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time: 2025-01-20 23:08:56
+Total registered users: 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors: 8
+Total Memory: 128 MB
+Free Memory: 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class: servlets.LoginServlet
+Annotations:
+  URL Patterns: /login
+--- Registration Servlet ---
+Class: servlets.RegistrationServlet
+Annotations:
+  URL Patterns: /register
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time: 2025-01-20 23:13:44
+Total registered users: 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors: 8
+Total Memory: 128 MB
+Free Memory: 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class: servlets.LoginServlet
+Annotations:
+  URL Patterns: /login
+--- Registration Servlet ---
+Class: servlets.RegistrationServlet
+Annotations:
+  URL Patterns: /register
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time: 2025-01-20 23:18:11
+Total registered users: 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version: 23.0.1
+OS Name: Windows 10
+User Directory: C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors: 8
+Total Memory: 128 MB
+Free Memory: 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class: servlets.LoginServlet
+Annotations:
+  URL Patterns: /login
+--- Registration Servlet ---
+Class: servlets.RegistrationServlet
+Annotations:
+  URL Patterns: /register
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-20 23:53:49
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 00:14:22
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 00:42:04
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 00:50:23
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 00:59:22
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 01:01:55
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 01:08:06
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 01:09:41
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 01:12:28
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 01:15:31
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 18:51:29
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 19:48:54
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 112 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 20:10:05
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 20:26:34
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 20:33:36
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 20:38:46
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 20:48:43
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 20:54:05
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 110 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:08:21
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:22:12
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 110 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:27:52
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:39:41
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:42:30
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:43:55
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:44:54
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-21 21:50:06
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 111 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 13:17:34
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 13:24:55
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 13:47:29
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:19:15
+Total registered users -> 8
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:31:30
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:33:52
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:34:50
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:40:10
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:45:43
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:47:16
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 14:55:36
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:02:13
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:16:10
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:18:53
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:20:40
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:35:19
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:47:38
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 15:52:41
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 16:00:35
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 16:29:49
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 16:54:37
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 17:31:10
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 20:00:26
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 20:26:34
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 20:35:25
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 20:45:38
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 20:52:33
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:02:43
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:29:17
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:37:26
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:42:10
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:45:24
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:50:31
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:51:25
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 21:56:49
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:02:13
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:06:05
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:14:18
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:31:00
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:36:17
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:41:56
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:49:21
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 22:51:22
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 23:03:50
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 23:05:05
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 23:40:57
+Total registered users -> 9
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-22 23:55:38
+Total registered users -> 10
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-23 00:14:12
+Total registered users -> 3
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-23 00:21:10
+Total registered users -> 3
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 98 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================
+===================================================
+APPLICATION STARTUP REPORT
+===================================================
+Application start time -> 2025-01-23 00:24:14
+Total registered users -> 3
+Performing startup tasks...
+All user records are valid
+System Information:
+Java Version -> 23.0.1
+OS Name -> Windows 10
+User Directory -> C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin
+Available Processors -> 8
+Total Memory -> 128 MB
+Free Memory -> 99 MB
+Servlet Configuration:
+--- Login Servlet ---
+Class -> servlets.LoginServlet
+Annotations:
+  URL Patterns -> /login
+--- Registration Servlet ---
+Class -> servlets.RegistrationServlet
+Annotations:
+  URL Patterns -> /register
+--- Profile Servlet ---
+Class -> servlets.ProfileServlet
+Annotations:
+  URL Patterns -> /profile
+--- Logout Servlet ---
+Class -> servlets.LogoutServlet
+Annotations:
+  URL Patterns -> /logout
+--- Goals Servlet ---
+Class -> servlets.GoalsServlet
+Annotations:
+  URL Patterns -> /goals
+===================================================

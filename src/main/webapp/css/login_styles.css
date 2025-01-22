@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f4f4f4, #2575fc);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border:  1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+
+.register-button {
+  margin-top: 15px;
+}
+
+.register-button a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.register-button a:hover {
+  text-decoration: underline;
+}
