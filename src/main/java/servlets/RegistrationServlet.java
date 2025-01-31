@@ -64,4 +64,9 @@ public class RegistrationServlet extends HttpServlet {
             response.sendRedirect("error.html?message=" + errorMessage);
         }
     }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.sendRedirect("register.html");
+    }
 }

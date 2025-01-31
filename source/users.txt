@@ -5,6 +5,13 @@ Country: ukraine
 City: Odesa
 Password: legendog1993
 --------------------------------------------------
+Username: Danila
+Email: danila@mail.ru
+Full Name: Danila Storage
+Country: belarus
+City: Pinsk
+Password: legendog
+--------------------------------------------------
 Username: Oleg
 Email: www.legendog@mail.ru
 Full Name: Oleg Savitski

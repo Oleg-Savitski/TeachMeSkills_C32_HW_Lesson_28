@@ -28,9 +28,13 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get('username');
-        document.getElementById("username").textContent = username || "Guest";
+        fetch('/getUsername')
+            .then(response => response.text())
+            .then(username => {
+
+                document.getElementById("username").textContent = username;
+            })
+            .catch(error => console.error('Error loading username:', error));
     });
 
     function openTodo() {
